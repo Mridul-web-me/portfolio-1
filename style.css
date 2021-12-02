@@ -7,6 +7,7 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     scroll-behavior: smooth;
+    transition: 0.3s;
 }
 
 
@@ -78,12 +79,13 @@ section {
 .banner {
     position: relative;
     min-height: 100vh;
-    background: url(banner.jpg);
+    /* background: url(banner.jpg);
     background-size: cover;
-    background-position: right;
+    background-position: right; */
     display: flex;
     justify-content: space-between;
     align-items: center;  
+    background-color: #000;
 }
 
 .banner h2 {
@@ -181,7 +183,7 @@ img {
     padding: 40px 20px;
     background: #222;
     color: #fff;
-    max-width: 340px;
+    max-width: 300px;
     margin: 20px;
     text-align: center;
     transition: 0.5s;
@@ -209,8 +211,10 @@ img {
 }
 
 .work .content .workBx {
-    width: 50%;
+    width: 45%;
     padding: 20px;
+    border: 1px solid;
+    margin: 20px;
 }
 
 .work .content .workBx img {
@@ -218,8 +222,38 @@ img {
 }
 
 
-
-
+.workLink {
+    position: absolute;
+    bottom: 5%;
+    display: none;
+    /* background-color: #000; */
+    width: 90%;
+}
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* transition: 2s */
+}
+.workBx {
+    position: relative;
+}
+.previewLink, .codeLink{
+    background-color: #111;
+    padding: 10px;
+    border-radius: 5px;
+}
+.previewLink a, .codeLink a{
+    color: #fff;
+    text-decoration: none;
+}
+.workBx:hover .workLink{
+    display: block;
+    transition: 0.3s;
+}
+.workImg img{
+    height: 400px;
+}
 .testimonials {
     background: #f7f7f7;
 }

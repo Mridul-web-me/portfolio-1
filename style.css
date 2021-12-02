@@ -398,6 +398,9 @@ img {
         padding: 20px 50px;
         z-index: 1000;
     }
+    .bannerImg{
+        display: none;
+    }
     .menu{
         position: fixed;
         top: 75px;

@@ -26,22 +26,29 @@
             <li><a href="#about" onclick="toggleMenu();">About</a></li>
             <li><a href="#service" onclick="toggleMenu();">Service</a></li>
             <li><a href="#work" onclick="toggleMenu();">Work</a></li>
-            <!-- <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li> -->
             <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
     </header>
+    <!-- <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li> -->
+
 
     <!---Header End--->
 
     <!---Banner Start--->
 
     <section class="banner" id="home">
-        <div class="textBx" data-aos=" fade-up">
-            <h2>Hello,<br> This is <span>Mridul Islam</span></h2>
-            <h3>I'm a Front End Web Developer</h3>
-            <a href="Resume3.pdf" class="btn" id="about" download>Download Resume</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Hello,<br> This is <span>Mridul Islam</span></h2>
+                    <h3>I'm a Front End Web Developer</h3>
+                    <a href="Resume3.pdf" class="btn" id="about" download>Download Resume</a>
+                </div>
+                <div class="col-md-4">
+                    <!-- <img class="bannerImg" src="banner3.png" alt=""> -->
+                </div>
+            </div>
         </div>
-        <img class="bannerImg" src="banner3.png" alt="">
     </section>
 
     <!---Banner End--->
@@ -49,22 +56,31 @@
     <!---About Start--->
 
     <section class="about" id="about">
-        <div class="heading">
-            <h2 data-aos="fade-down">About Me</h2>
+        <div class="container">
+            <h2 class="heading" data-aos="fade-down">About Me</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contentBx w50" data-aos="fade-right">
+                        <h3>I'm a Front End Web Developer.</h3>
+                        <p>Hi, I'm Mridul and I’m a front-end eveloper. I have a small team of experts. We are probably
+                            one of
+                            the most responsive
+                            teams. Last 2 years working on web design and development. Basically i'm a MERN Stack
+                            developer, i
+                            have done many
+                            project based on react, firebase etc and also good at HTML5, CSS3, bootstrap and javascript.
+                            <br>
+                            Thanks :)
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="w50" data-aos="fade-left">
+                        <img src="img/img1.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="content">
-            <div class="contentBx w50" data-aos="fade-right">
-                <h3>I'm a Front End Web Developer.</h3>
-                <p>Hi, I'm Mridul and I’m a front-end eveloper. I have a small team of experts. We are probably one of
-                    the most responsive
-                    teams. Last 2 years working on web design and development. Basically i'm a MERN Stack developer, i
-                    have done many
-                    project based on react, firebase etc and also good at HTML5, CSS3, bootstrap and javascript. <br>
-                    Thanks :)</p>
-            </div>
-            <div class="w50" data-aos="fade-left">
-                <img src="img/img1.jpg" class="img">
-            </div>
         </div>
     </section>
 
@@ -73,47 +89,64 @@
     <!---Service Start--->
 
     <section class="services" id="service">
-        <div class="heading-color">
-            <h2 data-aos="fade-down">Our Service</h2>
-            <!-- <p>Lorem Ipsum dolor sit, consectetur adipsicing elit.</p> -->
-        </div>
-        <div class="content">
-            <div class="serviceBx" data-aos="fade-right">
-                <img src="img/icon1.png">
-                <h2>Web Design</h2>
-                <p>We provide these services by experienced people. </p>
+        <div class="container">
+            <h2 class="heading-color" data-aos="fade-down">Our Service</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col" data-aos="fade-right">
+                    <div class="card">
+                        <img src="img/icon1.png">
+                        <div class="card-body">
+                            <h2>Web Design</h2>
+                            <p>We provide these services by experienced people. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="img/icon2.png">
+                        <div class="card-body">
+                            <h2>Web Development</h2>
+                            <p>We provide these services by experienced people.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-left">
+                    <div class="card">
+                        <img src="img/icon3.png">
+                        <div class="card-body">
+                            <h2>Android App</h2>
+                            <p>We provide these services by experienced people. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-right">
+                    <div class="card">
+                        <img src="img/icon4.png">
+                        <div class="card-body">
+                            <h2>Photography</h2>
+                            <p>We provide these services by experienced people.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="img/icon5.png">
+                        <div class="card-body">
+                            <h2>Content Writing</h2>
+                            <p>We provide these services by experienced people. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-left">
+                    <div class="card">
+                        <img src="img/icon6.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2>Video Editing</h2>
+                            <p>We provide these services by experienced people.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="serviceBx" data-aos="zoom-in">
-                <img src="img/icon2.png">
-                <h2>Web Development</h2>
-                <p>We provide these services by experienced people.</p>
-            </div>
-
-            <div class="serviceBx" data-aos="fade-left">
-                <img src="img/icon3.png">
-                <h2>Android App</h2>
-                <p>We provide these services by experienced people. </p>
-            </div>
-
-            <div class="serviceBx" data-aos="fade-right">
-                <img src="img/icon4.png">
-                <h2>Photography</h2>
-                <p>We provide these services by experienced people.</p>
-            </div>
-
-            <div class="serviceBx" data-aos="zoom-in">
-                <img src="img/icon5.png">
-                <h2>Content Writing</h2>
-                <p>We provide these services by experienced people. </p>
-            </div>
-
-            <div class="serviceBx" data-aos="fade-left">
-                <img src="img/icon6.png">
-                <h2>Vedio Editing</h2>
-                <p>We provide these services by experienced people.</p>
-            </div>
-        </div>
     </section>
 
     <!---Service End--->
@@ -121,87 +154,101 @@
     <!---Work Start--->
 
     <section class="work" id="work">
-        <div class="heading">
-            <h2 data-aos="fade-down">Our Latest Work</h2>
-            <p></p>
-        </div>
-        <div class="content">
-            <div class="workBx" data-aos="fade-right">
-                <div class="workImg">
-                    <img src="img/Micro Lab (1).png">
-                </div>
-                <div class="workLink">
-                    <div class="link">
-                        <div class="previewLink">
-                            <a href="https://microlab-a152a.web.app/" target="_blank"><i class="fas fa-podcast"></i>
-                                Live Preview</a>
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-down">Our Latest Work</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col" data-aos="fade-right">
+                    <div class="card">
+                        <div class="workImg">
+                            <img src="img/microlab.png" class="img-fluid">
                         </div>
-                        <div class="codeLink">
-                            <a href="https://github.com/Mridul-web-me/micro-lab" target="_blank"><i
-                                    class="fab fa-github"></i> GitHub Link</a>
+                        <div class="card-body">
+                            <div class="link">
+                                <div class="previewLink">
+                                    <a href="https://microlab-a152a.web.app/" target="_blank"><i
+                                            class="fas fa-podcast"></i>
+                                        Live Preview</a>
+                                </div>
+                                <div class="codeLink">
+                                    <a href="https://github.com/Mridul-web-me/micro-lab" target="_blank"><i
+                                            class="fab fa-github"></i> GitHub
+                                        Link</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="workBx" data-aos="fade-left">
-                <div class="workImg">
-                    <img src="img/GhuraGhuri.png">
-                </div>
-                <div class="workLink">
-                    <div class="link">
-                        <div class="previewLink">
-                            <a href="https://ghuraghuri-3ed1b.web.app/" target="_blank"><i class="fas fa-podcast"></i>
-                                Live Preview</a>
+                <div class="col" data-aos="fade-left">
+                    <div class="card">
+                        <div class="workImg">
+                            <img src="img/ghuraghuri.png" class="img-fluid">
                         </div>
-                        <div class="codeLink">
-                            <a href="https://github.com/Mridul-web-me/ghuraghuri-client-side" target="_blank"><i
-                                    class="fab fa-github"></i> GitHub Link</a>
+                        <div class="card-body">
+                            <span></span>
+                            <div class="link">
+                                <div class="previewLink">
+                                    <a href="https://dazzling-agnesi-8096df.netlify.app/" target="_blank"><i
+                                            class="fas fa-podcast"></i> Live
+                                        Preview</a>
+                                </div>
+                                <div class="codeLink">
+                                    <a href="https://github.com/Mridul-web-me/apple-mac" target="_blank"><i
+                                            class="fab fa-github"></i> GitHub
+                                        Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-right">
+                    <div class="card">
+                        <div class="workImg">
+                            <img src="img/mac.png" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <div class="link">
+                                <div class="previewLink">
+                                    <a href="https://dazzling-agnesi-8096df.netlify.app/" target="_blank"><i
+                                            class="fas fa-podcast"></i> Live
+                                        Preview</a>
+                                </div>
+                                <div class="codeLink">
+                                    <a href="https://github.com/Mridul-web-me/apple-mac" target="_blank"><i
+                                            class="fab fa-github"></i> GitHub
+                                        Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-left">
+                    <div class="card">
+                        <div class="workImg">
+                            <img src="img/learningHub.png" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <div class="link">
+                                <div class="previewLink">
+                                    <a href="https://dazzling-agnesi-8096df.netlify.app/" target="_blank"><i
+                                            class="fas fa-podcast"></i> Live
+                                        Preview</a>
+                                </div>
+                                <div class="codeLink">
+                                    <a href="https://github.com/Mridul-web-me/apple-mac" target="_blank"><i
+                                            class="fab fa-github"></i> GitHub
+                                        Link</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="workBx" data-aos="fade-right">
-                <div class="workImg">
-                    <img src="img/Apple iMac.png">
-                </div>
-                <div class="workLink">
-                    <div class="link">
-                        <div class="previewLink">
-                            <a href="https://dazzling-agnesi-8096df.netlify.app/" target="_blank"><i
-                                    class="fas fa-podcast"></i> Live Preview</a>
-                        </div>
-                        <div class="codeLink">
-                            <a href="https://github.com/Mridul-web-me/apple-mac" target="_blank"><i
-                                    class="fab fa-github"></i> GitHub Link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="workBx" data-aos="fade-left">
-                <div class="workImg">
-                    <img src="img/Learning Hub (1).png">
-                </div>
-                <div class="workLink">
-                    <div class="link">
-                        <div class="previewLink">
-                            <a href="https://zealous-panini-6eec03.netlify.app/" target="_blank"><i
-                                    class="fas fa-podcast"></i> Live Preview</a>
-                        </div>
-                        <div class="codeLink">
-                            <a href="https://github.com/Mridul-web-me/Learning-hub" target="_blank"><i
-                                    class="fab fa-github"></i> GitHub Link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="heading">
-            <a href="#" class="btn">View More</a>
-        </div> -->
     </section>
+    <!-- <div class="heading">
+            <a href="#" class="btn">View More</a>
+        </div>
+   
 
     <!---Work End--->
 
@@ -233,61 +280,64 @@
     <!---Contact Start--->
 
     <section class="contact" id="contact">
-        <div class="heading-color">
-            <h2 data-aos="fade-down"> Contact Us</h2>
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipising elit.</p> -->
-        </div>
-        <div class="content">
-            <div class="contactInfo" data-aos="fade-right">
-                <h3>Contact Info</h3>
-                <div class="contactInfoBx">
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Address</h3>
-                            <p>Kumarkhali, Kushtia,<br>Kushtia, khulna 7001, <br> Bangladesh</p>
-                        </div>
-                    </div>
+        <h2 class="heading-color" data-aos="fade-down"> Contact Us</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contactInfo" data-aos="fade-right">
+                        <h3>Contact Info</h3>
+                        <div class="contactInfoBx">
+                            <div class="box">
+                                <div class="icon">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Address</h3>
+                                    <p>Kumarkhali, Kushtia,<br>Kushtia, khulna 7001, <br> Bangladesh</p>
+                                </div>
+                            </div>
 
 
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Phone</h3>
-                            <p>+8801312-812128</p>
-                        </div>
-                    </div>
+                            <div class="box">
+                                <div class="icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Phone</h3>
+                                    <p>+8801312-812128</p>
+                                </div>
+                            </div>
 
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-envelope"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Email</h3>
-                            <p>md.mridul.23@gmail.com</p>
+                            <div class="box">
+                                <div class="icon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Email</h3>
+                                    <p>md.mridul.23@gmail.com</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="formBx" data-aos="fade-left">
-                <form>
-                    <h3>Message Me</h3>
-                    <input type="text" name="" placeholder="Full Name" action="required">
-                    <input type="email" name="" placeholder="Email" action="required">
-                    <textarea placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send">
-                </form>
+                <div class="col-md-6">
+                    <div class="formBx" data-aos="fade-left">
+                        <form>
+                            <h3>Message Me</h3>
+                            <input type="text" name="" placeholder="Full Name" action="required">
+                            <input type="email" name="" placeholder="Email" action="required">
+                            <textarea placeholder="Your Message"></textarea>
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!---Contact Start--->
     <div class="copyright">
-        <p>Copyright © 2020 Mridul. All Right Reserved.</p>
+        <p>Copyright © 2021 Mridul. All Right Reserved.</p>
 
     </div>
 

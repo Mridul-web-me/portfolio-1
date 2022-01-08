@@ -327,12 +327,12 @@
                 </div>
                 <div class="col-md-6">
                     <div class="formBx" data-aos="fade-left">
-                        <form action="mailto:md.mridul.23@gmail.com" method="post" enctype="text/plain">
+                        <form onsubmit="return false">
                             <h3>Message Me</h3>
-                            <input type="text" name="" placeholder="Full Name" action="required">
-                            <input type="email" name="" placeholder="Email" action="required">
-                            <textarea placeholder="Your Message"></textarea>
-                            <input type="submit" value="Send">
+                            <input type="text" name="name" placeholder="Full Name" action="required" id="name">
+                            <input type="email" name="email" placeholder="Email" action="required" id="email">
+                            <textarea placeholder="Your Message" name="message" id="message"></textarea>
+                            <input type="submit" value="Send" onclick="sendMail()">
                         </form>
                     </div>
                 </div>
@@ -363,6 +363,28 @@
             menuToggle.classList.toggle('active');
             menu.classList.toggle('active');
         };
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_Qgk58mQrbIo2lXra2m0Wd");
+        })();
+    </script>
+    <script>
+        function sendMail() {
+            let templateParams = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+
+            emailjs.send('portfolio13232', 'template_64n770g', templateParams)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function (error) {
+                    console.log('FAILED...', error);
+                });
+        }
     </script>
 </body>
 

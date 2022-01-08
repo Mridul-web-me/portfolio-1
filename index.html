@@ -327,7 +327,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="formBx" data-aos="fade-left">
-                        <form onsubmit="return false">
+                        <form onsubmit="return false" name="msgBox">
                             <h3>Message Me</h3>
                             <input type="text" name="name" placeholder="Full Name" action="required" id="name">
                             <input type="email" name="email" placeholder="Email" action="required" id="email">
@@ -380,10 +380,11 @@
 
             emailjs.send('portfolio13232', 'template_64n770g', templateParams)
                 .then(function (response) {
-                    console.log('SUCCESS!', response.status, response.text);
+                    alert('SUCCESS!', response.status, response.text);
                 }, function (error) {
-                    console.log('FAILED...', error);
+                    alert('FAILED...', error);
                 });
+            document.msgBox.reset();
         }
     </script>
 </body>
